@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jaydeep ❤️ Priyangshi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background: linear-gradient(145deg,#ff6a88,#ff99ac);
+  color:#fff;
+  overflow:hidden;
+}
+
+.section{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:0.8s ease;
+}
+
+.hidden{
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(40px);
+}
+
+.card{
+  width:92%;
+  max-width:460px;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(12px);
+  border-radius:22px;
+  padding:30px 24px;
+  text-align:center;
+  box-shadow:0 25px 45px rgba(0,0,0,0.25);
+}
+
+h1{
+  font-size:2rem;
+  margin-bottom:15px;
+}
+
+p{
+  font-size:1.05rem;
+  line-height:1.6;
+  margin-bottom:22px;
+}
+
+button{
+  padding:12px 26px;
+  border:none;
+  border-radius:25px;
+  font-size:1rem;
+  cursor:pointer;
+  background:#fff;
+  color:#ff5f7e;
+  font-weight:bold;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+.profiles{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:20px 0;
+}
+
+.profile img{
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #fff;
+}
+
+.timeline{
+  text-align:left;
+  font-size:0.95rem;
+}
+
+.timeline div{
+  margin-bottom:14px;
+}
+
+.gallery{
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+}
+
+.gallery img{
+  width:120px;
+  height:150px;
+  object-fit:cover;
+  border-radius:14px;
+  flex-shrink:0;
+}
+
+.final{
+  animation:fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:scale(0.9);}
+  to{opacity:1;transform:scale(1);}
+}
+
+.heart{
+  position:fixed;
+  bottom:-20px;
+  font-size:22px;
+  animation:floatUp 6s linear forwards;
+}
+
+@keyframes floatUp{
+  to{transform:translateY(-110vh);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- SECTION 1 -->
+<div class="section" id="s1">
+  <div class="card">
+    <h1>Hey Priyangshi ❤️</h1>
+    <p>
+      This isn’t just a website.  
+      It’s a few moments of my heart,  
+      written just for you.
+    </p>
+    <button onclick="next(1)">Start →</button>
+  </div>
+</div>
+
+<!-- SECTION 2 -->
+<div class="section hidden" id="s2">
+  <div class="card">
+    <h1>Us ✨</h1>
+
+    <div class="profiles">
+      <div class="profile">
+        <img src="c:\Wifey❤️🫂\Valentine❤️\images\WhatsApp Image 2026-02-13 at 8.10.40 PM.jpeg">
+        <p>Jaydeep</p>
+      </div>
+      <div style="font-size:28px;">❤️</div>
+      <div class="profile">
+        <img src="c:\Wifey❤️🫂\Valentine❤️\images\WhatsApp Image 2026-02-13 at 8.10.39 PM (2).jpeg">
+        <p>Priyangshi</p>
+      </div>
+    </div>
+
+    <p>
+      Somehow, without realizing,  
+      you became the person I think about  
+      when I smile for no reason.
+    </p>
+
+    <button onclick="next(2)">Next →</button>
+  </div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="section hidden" id="s3">
+  <div class="card">
+    <h1>Little Memories 📸</h1>
+
+    <div class="gallery">
+      <img src="c:\Wifey❤️🫂\Valentine❤️\images\WhatsApp Image 2026-02-13 at 8.10.39 PM (1).jpeg">
+      <img src="c:\Wifey❤️🫂\Valentine❤️\images\WhatsApp Image 2026-02-13 at 8.10.39 PM.jpeg">
+      <img src="c:\Wifey❤️🫂\Gelhi (photos)\IMG20240805161848.jpg">
+    </div>
+
+    <p>
+      These aren’t just photos.  
+      They’re moments I never want to forget.
+    </p>
+
+    <button onclick="next(3)">Next →</button>
+  </div>
+</div>
+
+<!-- SECTION 4 -->
+<div class="section hidden" id="s4">
+  <div class="card">
+    <h1>What I Feel 💭</h1>
+
+    <div class="timeline">
+      <div>• I feel calm when I talk to you</div>
+      <div>• I smile without trying</div>
+      <div>• I imagine future moments with you</div>
+      <div>• I want to grow with you</div>
+      <div>• I love you so much GELHI</div>
+    </div>
+
+    <button onclick="next(4)">One last thing →</button>
+  </div>
+</div>
+
+<!-- SECTION 5 -->
+<div class="section hidden" id="s5">
+  <div class="card final">
+    <h1>Priyangshi 💖</h1>
+    <p>
+      Will you be my Valentine?
+      <br><br>
+      Not just today,  
+      but in all the simple days ahead.
+      <br><br>
+      — Jaydeep ❤️
+    </p>
+    <button onclick="celebrate()">Yes 💕</button>
+  </div>
+</div>
+
+<script>
+function next(n){
+  document.getElementById("s"+n).classList.add("hidden");
+  document.getElementById("s"+(n+1)).classList.remove("hidden");
+}
+
+function celebrate(){
+  for(let i=0;i<40;i++){
+    const h=document.createElement("div");
+    h.className="heart";
+    h.innerHTML="❤️";
+    h.style.left=Math.random()*100+"vw";
+    h.style.fontSize=(Math.random()*20+14)+"px";
+    h.style.animationDuration=(Math.random()*2+4)+"s";
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(),7000);
+  }
+}
+</script>
+
+</body>
+</html>
